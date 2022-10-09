@@ -1,1 +1,39 @@
 
+nav {
+    border-bottom: 1px solid black;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #000;
+    color: white;
+}
+
+img {
+    height: 175px;
+    width: auto;
+    padding: 25px;
+    margin: 10px;
+    border: 1px;
+    border-style: dashed;
+}
+
+img:hover{
+    color: rgb(92, 92, 92);
+    background-color: rgb(184, 184, 184);
+}
