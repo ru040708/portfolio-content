@@ -41,15 +41,42 @@ ul {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: end;
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 10px;
     font-weight: bold;
+
 }
 
-li  {
+nav li  {
     display: inline;
+
     
+}
+
+aside{
+    position: relative;
+    left: 50px;
+    grid-column: 3/span 1;
+    grid-row: 2/span 1;
+    border: rgb(255, 255, 255) solid 1px;
+    width: 250px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+
+aside ul{
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+aside li a{
+    color: aliceblue;
+    margin: 0;
 }
 
 li a{
@@ -91,21 +118,7 @@ h1{
 
 
 
-aside {
-    grid-column: 3/span 1;
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    float: right;
-    font-style: italic;
-    color: #272727;
-    position: relative;
-    top: 300px;
-}
 
-aside > p {
-    margin: .5rem;
-}
 
 
 
@@ -121,7 +134,7 @@ aside > p {
 }
 
 .image-container img{
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .image-container {
@@ -206,7 +219,7 @@ span{
     .container{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 1fr 100px;
+        grid-template-rows: 200px 1fr 200px 100px;
 
         height: auto;
     }
@@ -231,6 +244,7 @@ span{
     
     footer{
         grid-column: 1/span 1;
+        grid-row: 4;
     }
     header{
         grid-column: 1/span 1;
@@ -241,18 +255,18 @@ span{
         border-bottom: none;
 
     }
-    ul{
+    nav ul{
         
         flex-direction: column;
         /* width: 100%; */
         
     }
-    li{
+    nav li{
         
         border: #000 solid 1px;
         /* width: 100%; */
     }
-    li a{
+    nav li a{
         display: block;
         text-align: right;
     }
@@ -266,6 +280,26 @@ span{
     }
     .image-container img{
         margin-top: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    aside{
+        grid-column: 1/span 1;
+        grid-row: 3/span 1;
+        left: 0;
+        text-align: left;
+        border: none;
+
+
+        
+    }
+
+    aside ul{
+        align-items: flex-start;
+        padding: 0;
+    
+    
     }
 
 }
