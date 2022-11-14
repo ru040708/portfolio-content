@@ -2,7 +2,7 @@ html{
     height: 100%;
 }
 .container{
-    background: url("images/background.jpg") ;
+    background: url("../images/background.jpg") ;
 
     display: grid;
     grid-template-columns: 1fr 1024px 1fr;
