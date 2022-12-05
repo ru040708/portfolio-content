@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
   </head>
 
   <body class="container">
@@ -32,7 +31,7 @@
             <a href="index.html"><i class="fa fa-envira"></i> Home</a>
           </li>
           <li class="">
-            <a href="itemgallery.html"
+            <a href="itemgallery.html" class="current"
               ><i class="fa fa-envira"></i>Item List</a
             >
           </li>
@@ -117,14 +116,6 @@
     </main>
 
     <footer>Copyright by Fumin Hsiao, 2022<br />517-312-7484</footer>
-    <script>
-      $(function(){
-        $('a').each(function() {
-          if ($(this).prop('href') == window.location.href) {
-            $(this).addClass('current');
-          }
-        });
-      });
-      </script>
+
   </body>
 </html>
