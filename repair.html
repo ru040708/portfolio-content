@@ -16,14 +16,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FH Repair</title>
-
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
   </head>
 
   <body class="container">
     <header>
-      <a href="index.html">
-        <img id="logo" src="images/logo-fh.png" alt="Logo-FH" />
+      <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+      <a href="/index.html">
+        <img id="logo" src="images/logo-fh.png" />
       </a>
       <nav>
         <ul>
@@ -36,16 +37,32 @@
             >
           </li>
           <li class="">
-            <a href="repair.html"><i class="fa fa-envira"></i>Repair</a>
+            <a href=/repair.html"><i class="fa fa-envira"></i>Repair</a>
           </li>
-          <li class="">
-            <a href="item1.html"><i class="fa fa-envira"></i>AR MST</a>
+          <li class="dropdown">
+            <div class="dropbtn">
+  
+              <i class="fa fa-envira"></i>Sell
+            </div>
+            
+            <div class="dropdown-content">
+              <a href="item1.html"></i>AR MST</a>
+              <a href="/"></i>AR LST</a>
+  
+              <a href="/"></i>AR 3a</a>
+              <a href="/"></i>JBL L100</a>
+  
+  
+            </div>
+  
           </li>
+          <li class=""><a href="contact.html"><i class="fa fa-envira"></i>Contact</a></li>
+
         </ul>
       </nav>
     </header>
 
-    <main class="content-container">
+    <main id="main" class="content-container">
       <div class="text-container">
         <h1>Repair</h1>
         <p>
@@ -72,11 +89,20 @@
       </div>
       <div class="image-container">
         <a href="images/repair.JPG"
-          ><img src="images/repair.jpg" alt="Repair Photo"
+          ><img src="images/repair.JPG" alt="Repair Photo"
         /></a>
       </div>
     </main>
 
     <footer>Copyright by Fumin Hsiao, 2022<br />517-312-7484</footer>
+    <script>
+      $(function(){
+        $('a').each(function() {
+          if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+          }
+        });
+      });
+      </script>
   </body>
 </html>

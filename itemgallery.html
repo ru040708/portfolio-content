@@ -16,14 +16,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FH Gallery</title>
-
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
   </head>
 
   <body class="container">
     <header>
+      <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
       <a href="index.html">
-        <img id="logo" src="images/logo-fh.png" alt="Logo-FH"/>
+        <img id="logo" src="images/logo-fh.png" />
       </a>
       <nav>
         <ul>
@@ -38,14 +39,30 @@
           <li class="">
             <a href="repair.html"><i class="fa fa-envira"></i>Repair</a>
           </li>
-          <li class="">
-            <a href="item1.html"><i class="fa fa-envira"></i>AR MST</a>
+          <li class="dropdown">
+            <div class="dropbtn">
+  
+              <i class="fa fa-envira"></i>Sell
+            </div>
+            
+            <div class="dropdown-content">
+              <a href="item1.html"></i>AR MST</a>
+              <a href="/"></i>AR LST</a>
+  
+              <a href="/"></i>AR 3a</a>
+              <a href="/"></i>JBL L100</a>
+  
+  
+            </div>
+  
           </li>
+          <li class=""><a href="contact.html"><i class="fa fa-envira"></i>Contact</a></li>
+
         </ul>
       </nav>
     </header>
 
-    <main class="content-container">
+    <main id="main" class="content-container">
       <div class="text-container" id="text-gallery">
         <h1>Items List</h1>
         <p>
@@ -100,5 +117,14 @@
     </main>
 
     <footer>Copyright by Fumin Hsiao, 2022<br />517-312-7484</footer>
+    <script>
+      $(function(){
+        $('a').each(function() {
+          if ($(this).prop('href') == window.location.href) {
+            $(this).addClass('current');
+          }
+        });
+      });
+      </script>
   </body>
 </html>
